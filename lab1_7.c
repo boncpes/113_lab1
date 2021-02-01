@@ -8,31 +8,33 @@ int main()
     scanf("%f",&t);
     h = (int)t;
     m = (t-h)*100;
-    int *pa=&n[0];
     if( h==0 )
     {
         hour = 12;
-        printf("%d:%d a.m.",hour,m);
+        printf("%d:%d0 a.m.",hour,m);
+        printf("\taaaaaaaaaaaa");
     }
     else if( h==12 )
     {
         hour = 12;
-        printf("%d:%d p.m.",hour,m);
+        printf("%d:%d0 p.m.",hour,m);
+        printf("\taaaaaaaaaaaa");
     }
     else if( h>0 || h<12 )
     {
         hour=p[h-1];
         printf("%d:%d a.m.",hour,m);
+        printf("\taaaaaaaaaaaa");
     }
     else if( h>12 || h<24 )
     {
         for(i=1;i<12;i++)
         {
-            if(pa==h)
+            if(n[i-1]==h)
             {
-               printf("%d:%d p.m.",i,m);
+               printf("%d:%d p.m.\n",i,m);
+               printf("aaaaaaaaaaaa");
             }
-            pa++;
         }
     }
 
