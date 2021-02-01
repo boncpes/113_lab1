@@ -1,18 +1,25 @@
 #include <stdio.h>
 int main()
 {
-    int N=0,i=0,MAX=0;
-    scanf("%d",&N);
-    int NUM[N];
-    for(i=0; i<N; i++)
+    int n,i,max,local;
+    scanf("%d",&n);
+    int num[n];
+    for(i=0; i<n; i++)
     {
-        scanf("%d",&NUM[N]);
-        if(i=0)
-            MAX=NUM[0];
-        else if(NUM[N]>MAX)
-            MAX=NUM[N];
+        scanf("%d",&num[i]);
+        if(i==0)
+            max=num[i];
+        else if(num[i]>max)
+            max=num[i];
     }
-
-
+    for(i=0; i<n; i++)
+    {
+        if(max==num[i])
+        {
+            local=i+1;
+            break;
+        }
+    }
+    printf("%d %d",local,max);
     return 0;
 }
