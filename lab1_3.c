@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main()
 {
-    long n=0;
-    scanf("%d",&n);
-    printf("%d %d", n%3, n%11);
+    signed long int n=0;
+    scanf("%li",&n);
+    printf("%li %li", n%3, n%11);
     return 0;
 }
