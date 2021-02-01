@@ -7,7 +7,7 @@ int main()
     scanf("%u %u %li %c",&n,&m,&t,&f);
     if(f=='L')
     {
-        for(i=1; i<t; i++)
+        for( i=1; i<t; i++)
         {
             k=k+n;
             if(k>t)
