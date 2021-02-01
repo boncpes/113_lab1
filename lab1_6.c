@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main()
 {
-    int n,m,k=0,i,c=0;
-    signed long int t;
+    unsigned int n,m,k=0,i,c=0;
+    unsigned long int t;
     char f,ans;
-    scanf("%d %d %li",&n,&m,&t);
+    scanf("%u %u %li",&n,&m,&t);
     fflush(stdin);
     scanf("%c",&f);
     if(f=='L')
