@@ -21,6 +21,7 @@ int main()
                 ans='R';
                 break;
             }
+
         }
     }
     else if(f=='R')
